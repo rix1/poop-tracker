@@ -12,6 +12,10 @@
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
     "react/no-unescaped-entities": "off",
-    "react/jsx-props-no-spreading": "off" // Don't think this makes sense in React Native
+    "react/jsx-props-no-spreading": "off", // Don't think this makes sense in React Native
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }
+    ]
   }
 }
