@@ -1,17 +1,14 @@
+import { Divider, Icon, Layout, Text } from "@ui-kitten/components";
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import EditScreenInfo from "../components/EditScreenInfo";
-import { Text, View } from "../components/Themed";
+import { View } from "../components/Themed";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
   },
   separator: {
     marginVertical: 30,
@@ -20,16 +17,23 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function TabOneScreen(): JSX.Element {
+export default function HomeScreen(): JSX.Element {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+    <Layout style={styles.container}>
+      <Icon
+        name="home-outline"
+        fill="#d2d2d2"
+        style={{ width: 32, height: 32 }}
+      />
+      <Text category="h1">Home</Text>
+      <Divider />
+
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" />
-    </View>
+      <EditScreenInfo path="/screens/HomeScreen.tsx" />
+    </Layout>
   );
 }

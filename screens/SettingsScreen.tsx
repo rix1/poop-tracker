@@ -1,7 +1,8 @@
+import { Icon, Layout, Text } from "@ui-kitten/components";
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import EditScreenInfo from "../components/EditScreenInfo";
-import { Text, View } from "../components/Themed";
+import { View } from "../components/Themed";
 
 const styles = StyleSheet.create({
   container: {
@@ -20,16 +21,21 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function TabTwoScreen(): JSX.Element {
+export default function SettingsScreen(): JSX.Element {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
+    <Layout style={styles.container}>
+      <Icon
+        name="person-outline"
+        fill="#d2d2d2"
+        style={{ width: 32, height: 32 }}
+      />
+      <Text category="h1">Settings</Text>
       <View
         style={styles.separator}
         lightColor="#eee"
         darkColor="rgba(255,255,255,0.1)"
       />
-      <EditScreenInfo path="/screens/TabTwoScreen.tsx" />
-    </View>
+      <EditScreenInfo path="/screens/SettingsScreen.tsx" />
+    </Layout>
   );
 }
