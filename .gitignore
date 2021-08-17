@@ -12,3 +12,6 @@ web-build/
 # macOS
 .DS_Store
 .eslintcache
+
+# app specific stuff
+.env
