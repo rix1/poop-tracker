@@ -9,7 +9,7 @@ function StatsTab(): JSX.Element {
   return (
     <StatsTabStack.Navigator headerMode="none">
       <StatsTabStack.Screen
-        name="StatsTab"
+        name="StatsScreen"
         component={StatsScreen}
         options={{ headerTitle: "Stats" }}
       />

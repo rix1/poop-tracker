@@ -9,7 +9,7 @@ function HomeTab(): JSX.Element {
   return (
     <HomeTabStack.Navigator headerMode="none">
       <HomeTabStack.Screen
-        name="HomeTab"
+        name="HomeScreen"
         component={HomeScreen}
         options={{ headerTitle: "Home" }}
       />

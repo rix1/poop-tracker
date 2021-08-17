@@ -9,7 +9,7 @@ function SettingsTab(): JSX.Element {
   return (
     <SettingsTabStack.Navigator headerMode="none">
       <SettingsTabStack.Screen
-        name="SettingsTab"
+        name="SettingsScreen"
         component={SettingsScreen}
         options={{ headerTitle: "Settings" }}
       />

@@ -15,13 +15,13 @@ export type BottomTabParamList = {
 };
 
 export type HomeTabParamList = {
-  HomeTab: undefined;
+  HomeScreen: undefined;
 };
 
 export type StatsTabParamList = {
-  StatsTab: undefined;
+  StatsScreen: undefined;
 };
 
 export type SettingsTabParamList = {
-  SettingsTab: undefined;
+  SettingsScreen: undefined;
 };

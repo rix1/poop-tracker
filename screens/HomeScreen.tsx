@@ -1,4 +1,4 @@
-import { Divider, Icon, Layout, Text } from "@ui-kitten/components";
+import { Icon, Layout, Text } from "@ui-kitten/components";
 import * as React from "react";
 import { StyleSheet } from "react-native";
 import EditScreenInfo from "../components/EditScreenInfo";
@@ -26,7 +26,6 @@ export default function HomeScreen(): JSX.Element {
         style={{ width: 32, height: 32 }}
       />
       <Text category="h1">Home</Text>
-      <Divider />
 
       <View
         style={styles.separator}
